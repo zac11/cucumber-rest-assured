@@ -15,6 +15,7 @@ glue= {"com.cucum.stepDefinitions"},
 monochrome=true
 )
 public class TestRunner {
+	public static String env = System.getenv("ENV");
 	public static File temp = new File("resources/temp.xml");
 	
 	@BeforeClass
