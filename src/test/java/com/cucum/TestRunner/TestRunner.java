@@ -10,7 +10,6 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/com/cucum/features",
-plugin= {"com.aventstack.extentreports.offline.commons.css.icons.material"},
 glue= {"com.cucum.stepDefinitions"},
 monochrome=true
 )
