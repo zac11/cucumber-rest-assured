@@ -40,5 +40,14 @@ public class ConfigReader {
 			throw new RuntimeException("Baseurl is not defined");
 		}
 	}
+	
+	public static String getPostsPath() {
+		String value = prop.getProperty("posts");
+		if(value!=null) {
+			return value;
+		}else {
+			throw new RuntimeException("Posts path not found");
+		}
+	}
 	}
 
